@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Abdelaziz - Front End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c2b5421ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------------- header ---------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo/4-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Ali Abdelaziz</span><br>From Egypt</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- about ---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate front end developer experienced with building websites using HTML, CSS and Javascript.
+                        Specializes in using Bootstrap, jQuery and JS frameworks to build diverse websites. <br><br>
+
+                        I am a highly organized and self-driven individual, passionate about developing my career in the
+                        field of Web Development. My commitment can be gauged from the fact
+                        that I am always looking for knowledge and learning.<br><br>
+
+                        During the course of my career, I have gained a specialist’s understanding of financial
+                        instruments and accounting software and have also gained an excellent experience in the field of
+                        Implementation and Web Development and have also been effective in explaining complex
+                        information in a comprehensible manner.
+                        As an Implementation Engineer and a Front End Developer, I am an accomplished communicator, with
+                        excellent organizational, decision making, and time management skills and have a proven track
+                        record of
+                        consistently meeting and regularly surpassing demanding performance goals.
+                        Proactive, innovative and highly influential.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS and javaScript</span><br>The languages for building, styling and
+                                programming web pages</li>
+                            <li><span>jQuery, Vue.JS, Bootstrap, Git and GitHub</span><br>javaScript and CSS libraries,
+                                frameworks and version control system</li>
+                            <li><span>Agile Methodology & SCRUM</span><br>Software development and testing framework
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Since June 2022</span><br>Front-End Developer at Khabeer Software Industries |
+                                KSI</li>
+                            <li><span>From Mar. 2020 to May 2022</span><br>Senior Implementation Engineer at Khabeer Software Industries |
+                                KSI</li>
+                            <li><span>From May 2015 to Feb. 2020</span><br>Senior Accountant at Swiss Garments Company |
+                                Arafa Holding</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Web Development Study and Training</li>
+                            <li><span>2006 - 2009</span><br>Bachelor's Degree, "Accounting and Finance" | Benha
+                                University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- services ----------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML & CSS Responsive Web Design</h2>
+                    <p>Enterprise-class websites need consistent colors, fonts, and design to match the organization's
+                        branding guidelines. Designing responsive websites,
+                        with CSS at the core of front end development alongside JavaScript and HTML.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript Development</h2>
+                    <p>JavaScript frameworks sit at the heart of any modern website. JavaScript developers use
+                        their extensive experience with core JavaScript development and the newest frameworks and
+                        libraries to build dynamic and responsive websites.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Custom Web App Development</h2>
+                    <p>Fuel the interactivity and expressions into your web portals through a customized approach
+                        using clean codes and great usability to achieve them.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- portfolio ----------------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mario-game.png">
+                    <div class="layer">
+                        <h3>Mario Game</h3>
+                        <p>A fully functional Mario-type game with just HTML5 canvas and vanilla JS.</p>
+                        <a href="https://github.com/ali-abdelaziz/Mario_Game.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/university.png">
+                    <div class="layer">
+                        <h3>World's Biggest University</h3>
+                        <p>The website connects you with the World's Biggest University.</p>
+                        <a href="https://github.com/ali-abdelaziz/University-Website-Design.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/movie-app1.png">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>Movie app based on TMDB API using HTML, CSS and JS.</p>
+                        <a href="https://github.com/ali-abdelaziz/Movie-App.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-editor.png">
+                    <div class="layer">
+                        <h3>Image Editor App</h3>
+                        <p>The app enables you to add filters to your images and download it after edit</p>
+                        <a href="https://github.com/ali-abdelaziz/Image-Editor-App.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/youtube-channel.png">
+                    <div class="layer">
+                        <h3>Youtube Channel</h3>
+                        <p>Making a website like YouTube using HTML, CSS and JS</p>
+                        <a href="https://github.com/ali-abdelaziz/YouTube-Channel.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------- contact ----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Alimabdelaziz1@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+2 0100 735 44 71</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/ali-abdelaziz"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-mohamed-abdelaziz/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ali.abdelaziiz"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                    <a href="images/Ali Abdelaziz - Front-End Developer.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2022 Made with <i class="fa-solid fa-heart"></i> by Ali Abdelaziz</div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
